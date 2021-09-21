@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Магазин электротранспорта</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <a href="#about_us">О нас</a>
+                    <a href="#catalog">Каталог</a>
+                    <a href="#podpiska">Контакты</a>
+                </nav>
+                <p>Москва,ул. Набережная 2 оф. 142</p>
+                <a href="tel:+79876757867">+7 987 675 78 67</a>
+                <br>
+                <img src="img/Логотип.png" alt="logo">
+                <h1>RUN OR GO</h1>
+                <button>Заказать звонок</button>
+            </div>
+        </header>
+        <section id="popul_all">
+            <div class="container">
+                <h2>САМЫЕ ПОПУЛЯРНЫЕ ТОВАРЫ</h2>
+                <div class="cards_all">
+                    <div class="card">
+                        <img src="img/catalog/giroscooters/1.jpg" alt="giroscooters">
+                        <h3>Smart Balance 10 Красный</h3>
+                        <p><span>вид:</span>Гидроскутер</p>
+                        <p><span>Цена:</span> 6500 р.</p>
+                        <button>Купить</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/catalog/segways/1.jpg" alt="segways">
+                        <h3>Xiaomi Ninebot mini Pro Black</h3>
+                        <p><span>вид:</span>Сигвэй</p>
+                        <p><span>Цена:</span> 31 480 р.</p>
+                        <button>Купить</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/catalog/electric_scooters/1.jpg" alt="electric_scooters">
+                        <h3>Xiaomi Mijia Electric Scooter m187 Black</h3>
+                        <p><span>вид:</span>Электросамокат</p>
+                        <p><span>Цена:</span> 20 480 р.</p>
+                        <button>Купить</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="catalog">
+        <div class="container">
+            <h2>КАТАЛОГ</h2>
+            <input type="radio" id="giroscooters" name="categories" value="giroscooters">
+            <input type="radio" id="electric_scooters" checked name="categories" value="electric_scooters">
+            <input type="radio" id="segways" name="categories" value="segways">
+            <input type="radio" id="all" name="categories" value="all"> 
+            <div class="categories catalog_background">
+                <form id="catalog_filter">
+                    <ul id="categories-container">
+                        <li>
+                            <label for="giroscooters" id="giroscooters-tab">Гироскутеры</label>
+                        </li>
+                        <li>
+                            <label for="electric_scooters" id="electric_scooters-tab">Электросамокаты</label>
+                        </li>
+                        <li>
+                            <label for="segways" id="segways-tab">Сигвеи</label>
+                        </li>
+                        <li>
+                            <label for="all" id="all-tab">Все</label>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="catalog_card">
+                <div id="giroscooters-container" class="card_catalog catalog_background">
+                    <div class="card">
+                        <img src="img/catalog/giroscooters/1.jpg" alt="giroscooters">
+                        <h3>Smart Balance 10 Красный</h3>
+                        <p><span>вид:</span>Гидроскутер</p>
+                        <p><span>Цена:</span> 6 500 р.</p>
+                        <button>Купить</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/catalog/giroscooters/2.jpg" alt="giroscooters">
+                        <h3>Smart Balance Premium 10 Цветные Молнии</h3>
+                        <p><span>вид:</span>Гидроскутер</p>
+                        <p><span>Цена:</span> 10 990 р.</p>
+                        <button>Купить</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/catalog/giroscooters/3_1.jpg" alt="giroscooters">
+                        <h3>Smart Balance SUV Черная Молния 10.5" Premium PRO</h3>
+                        <p><span>вид:</span>Гидроскутер</p>
+                        <p><span>Цена:</span> 8 590 р.</p>
+                        <button>Купить</button>
+                    </div>
+                </div>
+                <div id="electric_scooters-container" class="card_catalog catalog_background">
+                    <div class="card">
+                        <img src="img/catalog/electric_scooters/1.jpg" alt="electric_scooters">
+                        <h3>Xiaomi Mijia Electric Scooter m187 Black</h3>
+                        <p><span>вид:</span>Электросамокат</p>
+                        <p><span>Цена:</span> 20 480 р.</p>
+                        <button>Купить</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/catalog/electric_scooters/2.jpg" alt="electric_scooters">
+                        <h3>KUGOO S4 (8800mAh)</h3>
+                        <p><span>вид:</span>Электросамокат</p>
+                        <p><span>Цена:</span> 13 480 р.</p>
+                        <button>Купить</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/catalog/electric_scooters/3.jpg" alt="electric_scooters">
+                        <h3>SUBOR D9</h3>
+                        <p><span>вид:</span>Электросамокат</p>
+                        <p><span>Цена:</span> 11 790 р.</p>
+                        <button>Купить</button>
+                    </div>
+                </div>
+                <div id="segways-container" class="card_catalog catalog_background">
+                    <div class="card">
+                        <img src="img/catalog/segways/1.jpg" alt="segways">
+                        <h3>Xiaomi Ninebot mini Pro Black</h3>
+                        <p><span>вид:</span>Сигвей</p>
+                        <p><span>Цена:</span> 31 480 р.</p>
+                        <button>Купить</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/catalog/segways/2.jpg" alt="segways">
+                        <h3>Xiaomi Ninebot mini Pro White</h3>
+                        <p><span>вид:</span>Сигвей</p>
+                        <p><span>Цена:</span> 31 480 р.</p>
+                        <button>Купить</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/catalog/segways/3.jpg" alt="segways">
+                        <h3>Xiaomi Ninebot mini White</h3>
+                        <p><span>вид:</span>Сигвей</p>
+                        <p><span>Цена:</span> 14 790 р.</p>
+                        <button>Купить</button>
+                    </div>
+                </div>
+                <div id="all-container" class="card_catalog catalog_background">
+                    <div class="card">
+                        <img src="img/catalog/giroscooters/1.jpg" alt="giroscooters">
+                        <h3>Smart Balance 10 Красный</h3>
+                        <p><span>вид:</span>Гидроскутер</p>
+                        <p><span>Цена:</span> 6 500 р.</p>
+                        <button>Купить</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/catalog/giroscooters/2.jpg" alt="giroscooters">
+                        <h3>Smart Balance Premium 10 Цветные Молнии</h3>
+                        <p><span>вид:</span>Гидроскутер</p>
+                        <p><span>Цена:</span> 10 990 р.</p>
+                        <button>Купить</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/catalog/giroscooters/3_1.jpg" alt="giroscooters">
+                        <h3>Smart Balance SUV Черная Молния 10.5" Premium PRO</h3>
+                        <p><span>вид:</span>Гидроскутер</p>
+                        <p><span>Цена:</span> 8 590 р.</p>
+                        <button>Купить</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/catalog/electric_scooters/1.jpg" alt="electric_scooters">
+                        <h3>Xiaomi Mijia Electric Scooter m187 Black</h3>
+                        <p><span>вид:</span>Электросамокат</p>
+                        <p><span>Цена:</span> 20 480 р.</p>
+                        <button>Купить</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/catalog/electric_scooters/2.jpg" alt="electric_scooters">
+                        <h3>KUGOO S4 (8800mAh)</h3>
+                        <p><span>вид:</span>Электросамокат</p>
+                        <p><span>Цена:</span> 13 480 р.</p>
+                        <button>Купить</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/catalog/electric_scooters/3.jpg" alt="electric_scooters">
+                        <h3>SUBOR D9</h3>
+                        <p><span>вид:</span>Электросамокат</p>
+                        <p><span>Цена:</span> 11 790 р.</p>
+                        <button>Купить</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/catalog/segways/1.jpg" alt="segways">
+                        <h3>Xiaomi Ninebot mini Pro Black</h3>
+                        <p><span>вид:</span>Сигвей</p>
+                        <p><span>Цена:</span> 31 480 р.</p>
+                        <button>Купить</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/catalog/segways/2.jpg" alt="segways">
+                        <h3>Xiaomi Ninebot mini Pro White</h3>
+                        <p><span>вид:</span>Сигвей</p>
+                        <p><span>Цена:</span> 31 480 р.</p>
+                        <button>Купить</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/catalog/segways/3.jpg" alt="segways">
+                        <h3>Xiaomi Ninebot mini White</h3>
+                        <p><span>вид:</span>Сигвей</p>
+                        <p><span>Цена:</span> 14 790 р.</p>
+                        <button>Купить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section id="about_us">
+            <div class="container">
+                <h2>О НАС</h2>
+                <p>В нашем интернет-магазине представлен большой выбор гидроскутеров, сигвеев и электросамокатов от известных мировых производителей.
+                Все товары, представленные на нашем сайте, отобраны лучшими специалистами в этой области.</p>
+            </div>
+        </section>
+        <section id="our_special">
+            <div class="container">
+                <h2>НАШИ ПРЕИМУЩЕСТВА</h2>
+                <div class="block_special">
+                    <div class="spacial">
+                        <img src="img/advantages/3.png" alt="advantages">
+                        <h3>Гарантия качества</h3>
+                    </div>
+                    <div class="spacial">
+                        <img src="img/advantages/2.png" alt="advantages">
+                        <h3>Онлайн-консультант</h3>
+                    </div>
+                    <div class="spacial">
+                        <img src="img/advantages/4.png" alt="advantages">
+                        <h3>Быстрая доставка</h3>
+                    </div>
+                    <div class="spacial">
+                        <img src="img/advantages/1.png" alt="advantages">
+                        <h3>Большой ассортимент</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="partners">
+            <div class="container">
+                <h2>НАШИ ПАРТНЁРЫ</h2>
+                <div class="block_part">
+                   <div>
+                        <p>XIAOMI</p>
+                        <p>SMART</p>
+                    </div>
+                    <div>
+                        <p>LINBOL</p>
+                        <p>KUGOO</p>
+                        <p>BALANCE</p>
+                    </div>
+                    <div>
+                        <p>SUBOR</p>
+                        <p>AIRWHEEL</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="consultants">
+            <div class="container">
+                <h2>ПОМОГУТ С ВЫБОРОМ</h2>
+                <div class="block_consultants">
+                    <div class="card_consultants">
+                        <img src="img/consultants/1.png" alt="consultants">
+                        <p>Галина Петрова</p>
+                        <p><span>Менеджер по продажам</span></p>
+                    </div>
+                    <div class="card_consultants">
+                        <img src="img/consultants/3.png" alt="consultants">
+                        <p>Иван Алексеев</p>
+                        <p><span>Менеджер по продажам</span></p>
+                    </div>
+                    <div class="card_consultants">
+                        <img src="img/consultants/2.png" alt="consultants">
+                        <p>Светлана Астахова</p>
+                        <p><span>Менеджер по продажам</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="good_information">
+            <div class="block container">
+            <h2>ПОЛЕЗНАЯ ИНФОРМАЦИЯ</h2>
+            <div class="all">
+                <input checked type="radio" name="respond" id="desktop">
+                    <article id="slider">
+                            <input checked type="radio" name="slider" id="switch1">
+                            <input type="radio" name="slider" id="switch2">
+                            <input type="radio" name="slider" id="switch3">
+                            <input type="radio" name="slider" id="switch4">
+                        <div id="slides">
+                            <div id="overflow">
+                                <div class="image card_information">
+                                    <article>
+                                        <img src="img/useful_info/1.jpg" alt="useful_info">
+                                    </article>
+                                    <article>
+                                        <img src="img/useful_info/2.jpg" alt="useful_info">
+                                    </article>
+                                    <article>
+                                        <img src="img/useful_info/3.jpg" alt="useful_info">
+                                    </article>
+                                    <article>
+                                        <img src="img/useful_info/4.jpg" alt="useful_info">
+                                    </article>
+                                </div>
+                            <div id="first" class="text card_information">
+                                <h3>Как выбрать гироскутер? Советы перед покупкой</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus lacus et diam mollis dapibus. Nam fermentum elementum lorem, eget porttitor orci ultricies vel. Nam posuere feugiat pellentesque.</p>
+                                <button>Подробнее</button>
+                            </div>
+                            <div id="two" class="text card_information">
+                                <h3>Электросамокат. Какой лучше и как выбрать?</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus lacus et diam mollis dapibus. Nam fermentum elementum lorem, eget porttitor orci ultricies vel. Nam posuere feugiat pellentesque.</p>
+                                <button>Подробнее</button>
+                            </div>
+                            <div id="three" class="text card_information">
+                                <h3>Как выбрать сигвей? На что обратить внимание?</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus lacus et diam mollis dapibus. Nam fermentum elementum lorem, eget porttitor orci ultricies vel. Nam posuere feugiat pellentesque.</p>
+                                <button>Подробнее</button>
+                            </div>
+                            <div id="four" class="text card_information">
+                                <h3>Советы по выбору гироскутера для ребенка.</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus lacus et diam mollis dapibus. Nam fermentum elementum lorem, eget porttitor orci ultricies vel. Nam posuere feugiat pellentesque.</p>
+                                <button>Подробнее</button>
+                            </div>
+    
+                            </div>
+                        </div>
+                        <div id="controls">
+                            <label for="switch1"></label>
+                            <label for="switch2"></label>
+                            <label for="switch3"></label>
+                            <label for="switch4"></label>
+                
+                        </div>
+                        <div id="active">
+                            <label for="switch1"></label>
+                            <label for="switch2"></label>
+                            <label for="switch3"></label>
+                            <label for="switch4"></label>
+                        
+                        </div>
+                    </article>
+                </div>
+                </div>
+        </section>
+        <section id="podpiska">
+            <div class="container block_form">
+                <h2>ПОДПИСКА НА РАССЫЛКУ</h2>
+                <form>
+                    <input type="text" placeholder="ФИО"><br>
+                    <input type="email" placeholder="Почта"><br>
+                    <button>Подписаться</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="footer_content">
+                    <div class="cont_info">
+                    <img src="img/Логотип.png" alt="logo">
+                    <h1>RUN OR GO</h1>
+                    </div>
+                    <ul class="footer_ul">
+                        <li><a href="#about_us">О нас</a></li>
+                        <li><a href="#catalog">Каталог</a></li>
+                        <li><a href="#podpiska">Контакты</a></li>
+                    </ul>
+                    <ul class="footer_ul">
+                        <li><p>Москва,ул. Набережная 2 оф. 142</p></li>
+                        <li><a href="tel:+79876757867">+7 987 675 78 67</a></li>
+                    </ul>
+                    <ul class="footer_ul">
+                        <li><p>Мы в соц. сетях:</p></li>
+                        <li><a href="#"><img src="img/social_icons/vk.png" alt="vk"></a>
+                            <a href="#"><img src="img/social_icons/instagram.png" alt="instagram"></a>
+                            <a href="#"><img src="img/social_icons/youtube.png" alt="youtube"></a></li>
+                    </ul>
+            </div>
+        </div>
+        </footer>
+    </body>
+</html>
